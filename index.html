@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════════╗
+║           ИНСТРУКЦИЯ ПО ЗАМЕНЕ ИЗОБРАЖЕНИЙ-ЗАГЛУШЕК          ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  АВАТАР В ШАПКЕ:                                             ║
+║    ./assets/img/avatar.webp                                  ║
+║    Размер: 40×40px, обрезка по кругу                         ║
+║                                                              ║
+║  КЕЙСЫ — скрины «Было / Стало» (800×500px каждый):           ║
+║    ./assets/img/case-02-before.webp  — Проекты и задачи      ║
+║    ./assets/img/case-02-after.webp                           ║
+║    ./assets/img/case-03-before.webp  — Диаграмма Ганта       ║
+║    ./assets/img/case-03-after.webp                           ║
+║    ./assets/img/case-04-before.webp  — Расписание смен       ║
+║    ./assets/img/case-04-after.webp                           ║
+║    ./assets/img/case-05-before.webp  — Цифровое производство ║
+║    ./assets/img/case-05-after.webp                           ║
+║    ./assets/img/case-06-before.webp  — Корп. презентация     ║
+║    ./assets/img/case-06-after.webp                           ║
+║    ./assets/img/case-07-before.webp  — User Flow             ║
+║    ./assets/img/case-07-after.webp                           ║
+║    ./assets/img/case-08-before.webp  — Figma пространство    ║
+║    ./assets/img/case-08-after.webp                           ║
+║    ./assets/img/case-09-before.webp  — КВИЗ                  ║
+║    ./assets/img/case-09-after.webp                           ║
+║    ./assets/img/case-10-before.webp  — Неопределённость      ║
+║    ./assets/img/case-10-after.webp                           ║
+║    ./assets/img/case-11-before.webp  — Лендинг собаки        ║
+║    ./assets/img/case-11-after.webp                           ║
+║    ./assets/img/case-12-before.webp  — Лендинг Тайгербол     ║
+║    ./assets/img/case-12-after.webp                           ║
+║                                                              ║
+║  Формат: WebP, качество 85+                                  ║
+╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио UX/UI дизайнера Аллы Евсеевой — создаю интуитивные интерфейсы, которые связывают цели бизнеса и потребности пользователей">
+  <meta property="og:title" content="Алла Евсеева — UX/UI Дизайнер">
+  <meta property="og:description" content="Создаю интуитивные интерфейсы, которые связывают цели бизнеса и потребности пользователей">
+  <meta property="og:image" content="./assets/img/og-cover.webp">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#040303">
+  <meta name="color-scheme" content="dark">
+  <title>Алла Евсеева — UX/UI Дизайнер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="header__logo" aria-label="На главную">
+      <!-- REPLACE: avatar.webp — 40×40px круглое фото -->
+      <div class="header__avatar" aria-hidden="true">
+        <img src="./assets/img/avatar.png" alt="Алла Евсеева" width="40" height="40" loading="eager" decoding="async">
+      </div>
+      <span class="header__logo-text"><strong>Портфолио | Евсеева Алла</strong></span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="main-nav" class="nav" aria-label="Основная навигация">
+      <ul role="list">
+        <li><a href="#about" class="nav__link">Обо мне</a></li>
+        <li><a href="#competencies" class="nav__link">Компетенции</a></li>
+        <li><a href="#cases" class="nav__link">Кейсы</a></li>
+        <li><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__status" aria-label="Статус доступности">
+      <span class="header__status-dot" aria-hidden="true"></span>
+      <span class="header__status-text">Доступна для проектов</span>
+    </div>
+  </div>
+</header>
+
+<!-- ========== MAIN ========== -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Приветствие">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Привет, я</p>
+        <h1 class="hero__title">
+          <span class="hero__title-accent">UX|UI</span>
+          <span>ДИЗАЙНЕР</span>
+        </h1>
+      </div>
+      <div class="hero__desc-wrap" aria-hidden="true">
+        <!-- Декоративный курсор из макета -->
+        <img
+          src="./assets/img/cursor.png"
+          alt=""
+          width="80" height="80"
+          loading="eager" decoding="async"
+          aria-hidden="true"
+          class="hero__cursor"
+        >
+        <p class="hero__subtitle">Создаю интуитивные интерфейсы, которые связывают цели бизнеса и потребности пользователей</p>
+      </div>
+    </div>
+    <!-- Декоративная сетка -->
+    <div class="hero__grid" aria-hidden="true"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="container about__inner">
+      <div class="about__left">
+        <h2 id="about-heading" class="section-title section-title--accent">ОБО МНЕ</h2>
+        <div class="about__divider" aria-hidden="true"></div>
+      </div>
+      <div class="about__right">
+        <p class="about__lead">Превращаю сложную бизнес-логику в понятные, надёжные и быстрые интерфейсы.</p>
+        <p class="about__lead">Работаю на стыке потребностей пользователей, технических ограничений и бизнес-целей.<br>Не рисую ради красоты, а решаю задачи.</p>
+        <ul class="stats" role="list">
+          <li class="stat">
+            <div class="stat__line" aria-hidden="true"><span>+</span></div>
+            <span class="stat__value">3 в 1</span>
+            <span class="stat__desc">Адаптирую интерфейсы под любые устройства</span>
+          </li>
+          <li class="stat">
+            <div class="stat__line" aria-hidden="true"><span>+</span></div>
+            <span class="stat__value">20+</span>
+            <span class="stat__desc">Экранов спроектировано и отрисовано под ключ</span>
+          </li>
+          <li class="stat">
+            <div class="stat__line" aria-hidden="true"><span>+</span></div>
+            <span class="stat__value">−40%</span>
+            <span class="stat__desc">Уточняющих вопросов от разработчиков благодаря проработке User Flow и интерактивным прототипам</span>
+          </li>
+          <li class="stat">
+            <div class="stat__line" aria-hidden="true"><span>+</span></div>
+            <span class="stat__value">300+</span>
+            <span class="stat__desc">млн ₽ — сумма сделок, закрытых с использованием моих презентационных материалов</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIES -->
+  <section class="competencies" id="competencies" aria-labelledby="comp-heading">
+    <div class="container comp__inner">
+
+      <!-- COL 1: Featured card «Прототипирование» -->
+      <div class="comp__featured">
+        <div class="comp__featured-img" aria-hidden="true">
+          <div class="img-placeholder">
+            <img src="./assets/img/Prototipe img.png" width="300" height="300" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          </div>
+        </div>
+        <!-- REPLACE: icon-prototip.webp — 48×48px круглая иконка -->
+        <div class="comp__featured-icon" aria-hidden="true">
+          <img src="./assets/img/prototipe.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="comp__featured-title">Прототипирование</h3>
+        <p class="comp__featured-desc">Внедряю процесс быстрой проверки гипотез до этапа кодинга</p>
+      </div>
+
+      <!-- COL 2: 3 карточки в столбик -->
+      <div class="comp__grid">
+        <div class="comp__card">
+          <!-- REPLACE: icon-fullcycle.webp — 48×48px -->
+          <div class="comp__card-icon" aria-hidden="true">
+            <img src="./assets/img/full design cycle.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </div>
+          <h3 class="comp__card-title">Полный цикл дизайна</h3>
+          <p class="comp__card-desc">От исследования и User Flow до интерактивных прототипов и передачи в разработку</p>
+        </div>
+        <div class="comp__card">
+          <!-- REPLACE: icon-designsystem.webp — 48×48px -->
+          <div class="comp__card-icon" aria-hidden="true">
+            <img src="./assets/img/design system.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </div>
+          <h3 class="comp__card-title">Дизайн системы</h3>
+          <p class="comp__card-desc">Создаю и поддерживаю библиотеки компонентов для масштабирования продукта</p>
+        </div>
+        <div class="comp__card">
+          <!-- REPLACE: icon-adaptive.webp — 48×48px -->
+          <div class="comp__card-icon" aria-hidden="true">
+            <img src="./assets/img/adaptive design.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </div>
+          <h3 class="comp__card-title">Адаптивный дизайн</h3>
+          <p class="comp__card-desc">Делаю единый UX для веба, планшетов и мобильных устройств</p>
+        </div>
+      </div>
+
+      <!-- COL 3 ROW 1: Заголовок -->
+      <div class="comp__heading-wrap">
+        <h2 id="comp-heading" class="section-title section-title--accent section-title--right">КЛЮЧЕВЫЕ<br>КОМПЕТЕНЦИИ</h2>
+      </div>
+
+      <!-- COL 3 ROW 2: 2 карточки -->
+      <div class="comp__grid-right">
+        <div class="comp__card">
+          <!-- REPLACE: icon-commercial.webp — 48×48px -->
+          <div class="comp__card-icon" aria-hidden="true">
+            <img src="./assets/img/commercial design.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </div>
+          <h3 class="comp__card-title">Коммерческий дизайн</h3>
+          <p class="comp__card-desc">Готовлю презентации и инвестиционные материалы, которые помогают продавать</p>
+        </div>
+        <div class="comp__card">
+          <!-- REPLACE: icon-team.webp — 48×48px -->
+          <div class="comp__card-icon" aria-hidden="true">
+            <img src="./assets/img/communication with the team.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </div>
+          <h3 class="comp__card-title">Коммуникация с командой</h3>
+          <p class="comp__card-desc">Работаю в связке с продукт-менеджерами, разработчиками, инженерами</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="cases" id="cases" aria-labelledby="cases-heading">
+    <div class="container">
+      <h2 id="cases-heading" class="section-title section-title--accent cases__heading">КЕЙСЫ</h2>
+
+      <!-- Группа: Цифровизация АЭС -->
+      <div class="cases__group">
+        <h3 class="cases__group-title">Цифровизация АЭС</h3>
+        <div class="accordion" id="accordion-aes">
+
+          <!-- Кейс 1: Редизайн «Проекты и задачи» — ЕСТЬ МАКЕТ -->
+          <div class="accordion__item" id="case-02">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-02-body">
+              <span class="accordion__name">Редизайн модуля «Проекты и задачи»</span>
+              <span class="accordion__tag">Софт</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-02-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  <div class="case-screen">
+                    <span class="case-screen__label">Было</span>
+                    <div class="case-screen__img" data-lightbox>
+                      <!-- REPLACE: case-02-before.webp — скрин «до», 800×500px -->
+                      <img src="./assets/img/tasks_pre.png" alt="Модуль Проекты и задачи — до редизайна" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                  <div class="case-screen">
+                    <span class="case-screen__label">Стало</span>
+                    <div class="case-screen__img" data-lightbox>
+                      <!-- REPLACE: case-02-after.webp — скрин «после», 800×500px -->
+                      <img src="./assets/img/tasks_after.png" alt="Модуль Проекты и задачи — после редизайна" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">Из-за высокой загрузки в процессе ремонтных работ у пользователей нет времени работать со сложными сценариями, поэтому им необходим простой и интуитивно понятный интерфейс. Текущий интерфейс модуля был перегружен статусами, цветами и визуальными элементами. Пользователи сталкивались со сложной навигацией, высоким когнитивным шумом и усталостью глаз при ежедневной работе. Существовал риск сопротивления внедрению нового решения, если интерфейс окажется непривычным или сложным в освоении.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Аудитория</h4>
+                    <p class="case-block__text">Руководители среднего звена: Начальники бригад и мастера. Это люди, проживающие вне крупных городов, с низким уровнем цифровизации.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Снизить когнитивную нагрузку на пользователей и упростить выполнение ключевых сценариев, сохранив при этом привычную логику работы системы для плавного перехода на обновленный интерфейс.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Совместно с продуктовой командой я проработала требования и пользовательские боли, собранные от заказчиков;</li>
+                      <li>Сократила количество действий в ключевых сценариях, за счёт упрощения навигации и упрощения логики взаимодействия;</li>
+                      <li>Уменьшила визуальный шум и перегруженность интерфейса, сделала интерфейс легче для восприятия.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Новый дизайн был принят пользователями без сопротивления: им стало проще ориентироваться в задачах и статусах;</li>
+                      <li>Скорость работы с системой выросла на 15%. Сократилось количество действий в основных пользовательских сценариях;</li>
+                      <li>Снизилась когнитивная нагрузка при ежедневной работе.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 2: Диаграмма Ганта — ЕСТЬ МАКЕТ -->
+          <div class="accordion__item" id="case-03">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-03-body">
+              <span class="accordion__name">Редизайн модуля «Диаграмма Ганта»</span>
+              <span class="accordion__tag">Софт</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-03-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  <div class="case-screen">
+                    <span class="case-screen__label">Было</span>
+                    <div class="case-screen__img" data-lightbox>
+                      <img src="./assets/img/ganta_pre.png" alt="Диаграмма Ганта — до редизайна" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                  <div class="case-screen">
+                    <span class="case-screen__label">Стало</span>
+                    <div class="case-screen__img" data-lightbox>
+                      <img src="./assets/img/ganta_after.png" alt="Диаграмма Ганта — после редизайна" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">В систему была внедрена диаграмма Ганта как замена Primavera. Однако часть критически важного функционала осталась нереализованной, из-за чего интерфейс получился неудобным для работы. В результате это замедляло рабочие процессы и вынуждало пользователей одновременно использовать две системы.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Аудитория</h4>
+                    <p class="case-block__text">Аудитория: Руководители среднего и верхнего звена, начальники бригад. Это люди, проживающие вне крупных городов, с низким уровнем цифровизации.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Объединить всех пользователей в едином цифровом контуре, исключив потерю данных из-за ручного переноса из системы в систему. На основе обратной связи от пользователей разработать интерфейс диаграммы Ганта, которая станет полноценной рабочей заменой Primavera. </p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>На основе пользовательского интервью, проведённого бизнес-аналитиком, мы сформировали и согласовали приоритетный список доработок;</li>
+                      <li>После анализа требований в рамках редизайна я дополнила продукт недостающим функционалом;</li>
+                      <li>Сделала структуру данных более читаемой, сохранила знакомые паттерны взаимодействия для плавной адаптации пользователей.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Primavera полностью замещена новым функционалом системы - закрыты ключевые пользовательские потребности;</li>
+                      <li>Диаграмма Ганта стала основным инструментом планирования и контроля ремонтов для нескольких уровней управления: от начальников участков до главного инженера по ремонтам;</li>
+                      <li>Планирование и обновление графиков объединено в едином цифровом контуре: задачи автоматически синхронизируются с диаграммой, двойное ведение данных исключено;</li>
+                      <li>Сократилось время на выполнение типовых операций и навигацию по графикам.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 3: Расписание смен — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-04">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-04-body">
+              <span class="accordion__name">Дизайн модуля «Расписание смен»</span>
+              <span class="accordion__tag">Софт</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-04-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  <div class="case-screen">
+                    <span class="case-screen__label">Стало</span>
+                    <div class="case-screen__img" data-lightbox>
+                      <!-- REPLACE: case-04-after.webp — 800×500px -->
+                      <img src="./assets/img/shifts_after.png" alt="Расписание смен — после" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">В виджете планирования персонала логика подсчёта смен была некорректной. Система не учитывала, что бригады меняются в процессе ремонта. ЛПР видели неверные данные. Переработка логики влечет за собой создание дополнительного функционала для руководителей среднего звена.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Аудитория</h4>
+                    <p class="case-block__text">Руководители среднего и верхнего звена, начальники бригад.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">На основе согласованной новой логики расчёта спроектировать интерфейс, который предоставит ЛПР корректные данные, а начальникам участков — удобный и быстрый дополнительный функционал, который пользователи примут без сопротивления.</p><!-- REPLACE -->
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Предложила вариант ввода данных для корректного расчёта в макетах, исходя из новой логики. Разработала интерфейс “в едином окне” позволяющий пользователю выполнять все действия с бригадами без перехода в другие вкладки;</li>
+                      <li>Разработала интерактивную таблицу мгновенно отображающую перестройку графика после внесения точечных изменений;</li>
+                      <li>Пересобрала макет после получения обратной связи и выявления дополнительных факторов.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Логика расчёта перестроена - ЛПР видят корректные данные по сменам;</li>
+                      <li>Новый функционал для начальников участков удобен и позволяет выполнять операции быстро;</li>
+                      <li>Новый интерфейс приняли без сопротивления.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 5: Корп. презентация — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-06">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-06-body">
+              <span class="accordion__name">Дизайн корпоративной презентации</span>
+              <span class="accordion__tag">Презентации</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-06-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  <div class="case-screen">
+                    <span class="case-screen__label"></span>
+                    <div class="case-screen__img" data-lightbox>
+                    <img src="./assets/img/presentation_after.png" alt="Корп. презентация — до" width="800" height="500" loading="lazy" decoding="async"></div></div>
+                  <div class="case-screen"><span class="case-screen__label"></span>
+                    <div class="case-screen__img" data-lightbox>
+                      <img src="./assets/img/presentation_after 1.png" alt="Корп. презентация — после" width="800" height="500" loading="lazy" decoding="async"></div></div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">Компании требовались презентации для разных целей: инвесторы, гранты, крупные заказчики, выставки. Запрос на создание презентации поступал от сейлзов и был  в режиме «ещё вчера» — всегда срочно, без наличия ТЗ. Приходилось тратить время на дополнительные уточнения и переделки. Сложные технические моменты объяснялись плохо.Также, приходилось привлекать коллег из продуктовой команды. Единого дизайн-стиля не существовало. В результате внутри компании был хаос, а внешние заказчики не видели целостного образа.</p>
+                    </div>
+                    <div class="case-block">
+                      <h4 class="case-block__title">Цель</h4>
+                      <p class="case-block__text">Убрать хаос и выстроить качественный процесс работы между дизайнером и сейлзами. Сформировать целостный образ компании во внешней среде за счет единого дизайн-стиля.</p>
+                    </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Внедрила бриф — короткую форму для сейлзов, для четкого описания ТЗ;</li>
+                      <li>Разработала единую визуальную концепцию;</li>
+                      <li>Разработала библиотеку готовых шаблонов, позволяющую сейлзам самостоятельно редактировать шаблон и закрывать срочные запросы.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>За счет готовых шаблонов обращения сейлзов к дизайнеру за типовыми презентациями сократились в 2 раза;</li>
+                      <li>На 50% - сократилось время на дополнительные уточнения с использованием Брифа;</li>
+                      <li>В компании закрепился единый стандарт презентаций;</li>
+                      <li>Презентации помогли закрыть сделки на сумму свыше 300 млн рублей.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 6: User Flow — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-07">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-07-body">
+              <span class="accordion__name">User Flow для разработчиков</span>
+              <span class="accordion__tag">Внутренние задачи</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-07-body" hidden>
+              <div class="case-content">
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">Разработчикам была непонятна логика переходов и состояний интерфейса, описанная в техническом задании. Они начинали писать код, опираясь на финальные экраны без сценариев использования. Критическая проблема проявлялась на этапе code review, когда логические несоответствия и недопонимания обнаруживались слишком поздно. Это приводило к возврату задач в доработку, конфликтным ситуациям между разработкой и продуктовой командой и увеличивало стоимость разработки.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Снизить стоимость разработки — найти решение, которое позволит выявлять недопонимания и логические ошибки до этапа реализиции. Сократить количество конфликтных ситуаций между отделами и сотрудниками.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Провели встречу с командой разработки и выявили ключевую причину ошибок;</li>
+                      <li>Я предложила решение в виде User Flow — схемы пользовательских путей с переходами;</li>
+                      <li>Закрепили новый подход в командной документации как стандарт.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Количество уточняющих вопросов со стороны разработки сократилось на 40–60%, что ускорило процесс согласования решений;</li>
+                      <li>Снизилось количество спорных ситуаций между разработкой, продуктовой командой и командой внедрения за счёт единого понимания сценариев и логики продукта;</li>
+                      <li>Снизилась стоимость разработки. Ошибки и несоответствия стали выявляться на начальных этапах.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 7: Figma пространство — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-08">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-08-body">
+              <span class="accordion__name">Организация пространства Figma</span>
+              <span class="accordion__tag">Внутренние задачи</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-08-body" hidden>
+              <div class="case-content">
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">Разработчики  заходили в рабочую область, где хранились сырые, незавершённые макеты. Они начинали задавать вопросы по этим черновикам, критиковать незафинализированные решения и требовать объяснений. Это порождало конфликты, лишние созвоны и переделки уже написанного кода, что увеличивало стоимость разработки.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Выстроить рабочий процесс между дизайном и разработкой: Снизить количество конфликтов и стоимость разработки.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Стала инициатором создания и согласования бизнес-процесса передачи макетов между продуктовой командой и разработкой. Защитила эту идею перед лидом;</li>
+                      <li>Предложила разделить Figma на три пространства с разными уровнями доступа:
+                        <ul>
+                          <li>В работе — рабочая зона для продуктовой команды, где хранятся черновики и текущие итерации;</li>
+                          <li>На проверке — зона предварительного согласования с бизнесом и разработкой;</li>
+                          <li>Финальные макеты — макеты утверждены и не подлежат изменениям.</li>
+                        </ul>
+                      </li>
+                      <li>Приняла активное участие в создании бизнес-процесса и его согласовании с командой разработки, настроила права доступа и закрепила правила перехода макетов между зонами.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Рабочий процесс между командами выстроен, конфликтные ситуации свелись к минимуму;</li>
+                      <li>Лишние вопросы и вмешательства прекратились, 40% - экономия времени на работу с макетами;</li>
+                      <li>Снизилась стоимость разработки (точный процент не известен, так как это внутренние данные другой команды).</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 8: КВИЗ — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-09">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-09-body">
+              <span class="accordion__name">Новогодний корпоративный КВИЗ</span>
+              <span class="accordion__tag">Внутренние задачи</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-09-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  <div class="case-screen"><span class="case-screen__label"></span>
+                    <div class="case-screen__img" data-lightbox>
+                      <img src="./assets/img/quiz 1.png" alt="КВИЗ — до" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                  <div class="case-screen"><span class="case-screen__label"></span>
+                    <div class="case-screen__img" data-lightbox>
+                      <img src="./assets/img/quiz 2.png" alt="КВИЗ — после" width="800" height="500" loading="lazy" decoding="async"></div></div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">В компании сложилась тяжёлая финансовая ситуация, поэтому традиционный корпоратив проводить не стали. На ретроспективе мы с продуктовой командой придумали альтернативу — внутренний КВИЗ по продукту, чтобы поддержать командный дух, подвести итоги года и в лёгкой форме повторить знания о системе, заказчиках и коллегах.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Укрепить знания о продукте и заказчиках, сфокусироваться на сплочении команды. Компенсировать отсутствие корпоратива без лишних затрат.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Совместно с лидом продуктовой команды проработала концепцию и механику игры;</li>
+                      <li>Разработала дизайн презентации КВИЗа, смешав корпоративный стиль с новогодней атрибутикой;</li>
+                      <li>Согласовали призы для победителей — для дополнительной мотивации и азарта;</li>
+                      <li>Выступила соведущей КВИЗа: вела игру, помогала с подсчётом очков и оценкой команд.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Знания о продукте и заказчиках укреплены;</li>
+                      <li>Настроение команды поднято — коллеги отметили тёплую атмосферу и оставили положительные отзывы;</li>
+                      <li>Командность достигнута;</li>
+                      <li>Отсутствие корпоратива компенсировано без финансовых затрат.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 9: Неопределённость — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-10">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-10-body">
+              <span class="accordion__name">Работа в режиме неопределённости</span>
+              <span class="accordion__tag">Другое</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-10-body" hidden>
+              <div class="case-content">
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">Я пришла в компанию как продуктовый дизайнер для развития системного интерфейса, но 80–90% времени занимали срочные, несистемные задачи от владельца, который связывался со мной напрямую — презентации, правки, запросы в режиме «ещё вчера», часто без ТЗ и с просьбами работать ночью. Параллельно я должна была отдавать макеты разработке в срок по задачам продуктовой команды. Конфликт приоритетов был постоянным. Мой прямой руководитель не мог повлиять на ситуацию и позже уволился.</p>
+                    </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Добиться налаживания процессов, открыто озвучив свои приоритеты и цели в компании.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Инициировала встречу с новым руководителем и открыто обозначила системные проблемы: конфликт приоритетов между срочными задачами владельца и моей основной работой над продуктовым дизайном, а также отсутствие понимания моего профессионального роста;</li>
+                      <li>Подняла вопрос о необходимости градирования и потребовала дать чёткую линию развития;</li>
+                      <li>Попросила настроить прозрачный процесс постановки задач между мной, владельцем и продуктовой командой.</li>
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Были зафиксированы чёткие границы между продуктовыми задачами и внештатными запросами, рабочий график нормировался;</li>
+                      <li>Процесс постановки задач выстроен: внеплановые запросы перестали быть приоритетом по умолчанию;</li>
+                      <li>Появилась карта профессионального развития — стало понятно, куда и как расти внутри компании.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 10: Неопределённость — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-04">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-05-body">
+              <span class="accordion__name">Цифровое предприятие</span>
+              <span class="accordion__tag">Софт</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-05-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  <div class="case-screen">
+                    <span class="case-screen__label">Было</span>
+                    <div class="case-screen__img case-screen__img--placeholder" data-lightbox>
+                      <!-- REPLACE: case-04-before.webp — 800×500px -->
+                      <img src="./assets/img/case-04-before.webp" alt="Расписание смен — до" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                  <div class="case-screen">
+                    <span class="case-screen__label">Стало</span>
+                    <div class="case-screen__img case-screen__img--placeholder" data-lightbox>
+                      <!-- REPLACE: case-04-after.webp — 800×500px -->
+                      <img src="./assets/img/case-04-after.webp" alt="Расписание смен — после" width="800" height="500" loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <h4 class="case-block__title">Проблема</h4>
+                    <p class="case-block__text">Описание проблемы будет добавлено позже.</p><!-- REPLACE -->
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Аудитория</h4>
+                    <p class="case-block__text">Описание аудитории будет добавлено позже.</p><!-- REPLACE -->
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Цель</h4>
+                    <p class="case-block__text">Описание цели будет добавлено позже.</p><!-- REPLACE -->
+                  </div>
+                  <div class="case-block">
+                    <h4 class="case-block__title">Действия</h4>
+                    <ol class="case-block__list">
+                      <li>Действие 1 будет добавлено позже</li><!-- REPLACE -->
+                    </ol>
+                  </div>
+                  <div class="case-block case-block--result">
+                    <h4 class="case-block__title case-block__title--accent">Результат</h4>
+                    <ol class="case-block__list">
+                      <li>Результат будет добавлен позже</li><!-- REPLACE -->
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /accordion АЭС -->
+      </div><!-- /group АЭС -->
+
+      <!-- Группа: Лендинги -->
+      <div class="cases__group">
+        <h3 class="cases__group-title">Лендинги</h3>
+        <div class="accordion" id="accordion-landings">
+
+          <!-- Кейс 11: Инструктор — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-11">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-11-body">
+              <span class="accordion__name">Для инструктора по подготовке собак к пастьбе</span>
+              <span class="accordion__tag">Лендинг</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-11-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  
+                  <div class="case-screen"><span class="case-screen__label">Стало</span><div 
+                    class="case-screen__img" data-lightbox><img src="./assets/img/PS.png" alt="Лендинг инструктора — после" width="800" height="500" loading="lazy" decoding="async"></div></div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block"><h4 class="case-block__title">Проблема</h4><p class="case-block__text">У инструктора с чемпионским опытом (20+ стран, ЧМ в Стокгольме и Будапеште) и собственной базой в Ленобласти не было сайта. Клиенты находили её только через сарафанное радио — это сдерживало рост и мешало профессионально презентовать услуги.</p><!-- REPLACE --></div>
+
+                  <div class="case-block"><h4 class="case-block__title">Цель</h4><p class="case-block__text">Создать лендинг, который передаст экспертность, вызовет доверие через достижения и даст чёткую информацию о тренировках и записи.</p><!-- REPLACE --></div>
+                  <div class="case-block"><h4 class="case-block__title">Действия</h4><ol class="case-block__list">
+                    <li>Провела брифинг, изучила аудиторию и специфику пастушьей службы;</li>
+                    <li>Разработала структуру и прототип, согласовала с клиенткой;</li>
+                    <li>Оформила лендинг в природных тонах с акцентом на чемпионский опыт.</li>
+                  </ol><!-- REPLACE --></div>
+                  <div class="case-block case-block--result"><h4 class="case-block__title case-block__title--accent">Результат</h4><ol class="case-block__list">
+                    <li>Лендинг создан, отражает экспертность и уникальность услуги;</li>
+                    <li>Кейс опубликован на Behance.<a href="https://www.behance.net/gallery/212937499/lending-dlja-instruktora-sobak-k-pastbe" class="href"> Перейти</a></li>
+                  </ol><!-- REPLACE --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кейс 12: Тайгербол — ЗАГЛУШКА -->
+          <div class="accordion__item" id="case-12">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="case-12-body">
+              <span class="accordion__name">Для сети пекарен «Тайгербол»</span>
+              <span class="accordion__tag">Лендинг</span>
+              <span class="accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion__body" id="case-12-body" hidden>
+              <div class="case-content">
+                <div class="case-screens">
+                  
+                  <div class="case-screen">
+                    <span class="case-screen__label">Стало</span>
+                    <div class="case-screen__img" data-lightbox>
+                      <img src="./assets/img/tg.png" alt="Тайгербол — после" width="800" height="500" loading="lazy" decoding="async"></div></div>
+                </div>
+                <div class="case-blocks">
+                  <div class="case-block"><h4 class="case-block__title">Проблема</h4><p class="case-block__text">У пекарни "Тайгербол" отсутствовала визуальная идентичность: не было логотипа, брендбука, единого стиля в соцсетях (Instagram, ВКонтакте) и собственного сайта. Бренд не имел целостного лица, что мешало узнаваемости и привлечению онлайн‑заказчиков.</p><!-- REPLACE --></div>
+
+                  <div class="case-block"><h4 class="case-block__title">Цель</h4><p class="case-block__text">Создать запоминающийся и тёплый бренд, отражающий две ценности: уют и изысканность. Разработать логотип, айдентику и адаптивный лендинг, который вызовет доверие и желание заказать.</p><!-- REPLACE --></div>
+                  <div class="case-block"><h4 class="case-block__title">Действия</h4><ol class="case-block__list">
+                    <li>Исследование - провела брифинг с владелицей, изучила аудиторию и конкурентов;</li>
+                      <li>Создала фирменный стиль - разработала логотип, цветовую палитру;</li>
+                      <li>Прототип лендинга - разработала структуру страницы, согласовала с клиентом;</li>
+                      <li>Отрисовала теплый "домашний" дизайн для лендинга;</li>
+                      <li>Сделала адаптив под разные устройства.</li></li></ol><!-- REPLACE --></div>
+
+                  <div class="case-block case-block--result"><h4 class="case-block__title case-block__title--accent">Результат</h4><ol class="case-block__list">
+                    <li>Бренд получил целостный образ и и узнаваемый фирменный стиль;</li>
+                    <li>Лендинг показывает ассортимент и приводит дополнительные заказы;</li>
+                    <li>Кейс опубликован на Behance: "Тайгербол - вкусная атмосфера Саванны". <a href="https://www.behance.net/gallery/221792795/lending-dlja-pekarni-Tijgerbol" class="href">Перейти</a></li>
+                  </ol><!-- REPLACE --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /accordion Лендинги -->
+      </div><!-- /group Лендинги -->
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer" id="contacts">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <p class="footer__name">Евсеева Алла</p>
+      <p class="footer__role">UX/UI Дизайнер</p>
+    </div>
+    <nav class="footer__contacts" aria-label="Контакты">
+      <a href="mailto:allochka.evseeva@bk.ru" class="footer__link">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5l7 4.5 7-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        allochka.evseeva@bk.ru
+      </a>
+      <a href="https://t.me/Ev_Alla_V" class="footer__link" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7.25" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9l2 2 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Telegram: @Ev_Alla_V
+      </a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Кнопка «Вверх» фиксированная -->
+<button class="btn-up-fixed" id="btn-up-fixed" aria-label="Вверх" title="Вверх" hidden>
+  <span class="btn-up__label">ВВЕРХ</span>
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M8 13V3M3 8L8 3L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения" hidden>
+  <button class="lightbox__close" id="lightbox-close" aria-label="Закрыть">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+  <div class="lightbox__content">
+    <img class="lightbox__img" id="lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
