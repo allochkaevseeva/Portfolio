@@ -77,6 +77,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   display: flex;
   align-items: center;
   gap: var(--sp-4);
+  padding: 0 var(--sp-4);
 }
 .header__logo {
   display: flex;
@@ -248,6 +249,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding-bottom: 0.15em;
 }
 .section-title--right { text-align: right; }
 
@@ -726,6 +728,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
    ============================================================ */
 @media (max-width: 680px) {
   /* Section-level side padding on mobile */
+  .header__inner     { padding-left: var(--sp-2); padding-right: var(--sp-2); }
   .hero__inner       { padding-left: var(--sp-2); padding-right: var(--sp-2); }
   .about__inner      { padding-left: var(--sp-2); padding-right: var(--sp-2); }
   .comp__inner       { padding-left: var(--sp-2); padding-right: var(--sp-2); }
